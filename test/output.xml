@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180621 11:24:50.477" generator="Robot 3.0.4 (Python 2.7.13 on darwin)">
+<suite source="/Users/abhaybhargav/Documents/Code/Python/RoboNodeJSScan/test/BrakemanTest.robot" id="s1" name="BrakemanTest">
+<test id="s1-t1" name="Run Bandit against Source Code">
+<kw name="Run Nodejsscan Against Source" library="RoboNodeJSScan">
+<arguments>
+<arg>${CODE_PATH}</arg>
+<arg>${RESULTS_PATH}</arg>
+</arguments>
+<msg timestamp="20180621 11:27:20.401" level="INFO">Successfully ran NodeJSScan against the src. Please find the *.html and *.json files in the results directory</msg>
+<status status="PASS" endtime="20180621 11:27:20.402" starttime="20180621 11:24:50.814"></status>
+</kw>
+<status status="PASS" endtime="20180621 11:27:20.402" critical="yes" starttime="20180621 11:24:50.813"></status>
+</test>
+<status status="PASS" endtime="20180621 11:27:20.403" starttime="20180621 11:24:50.480"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="BrakemanTest" pass="1">BrakemanTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
