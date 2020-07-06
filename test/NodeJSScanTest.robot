@@ -3,7 +3,7 @@ Library  /Users/abhaybhargav/Documents/Code/Python/RoboNodeJSScan/robonodejsscan
 
 *** Variables ***
 ${CODE_PATH}  /Users/abhaybhargav/Documents/code/node/NodeGoat/
-${RESULTS_PATH}  /Users/abhaybhargav/Documents/code/python/RoboNodeJSScan/test
+${RESULTS_PATH}  /Users/abhaybhargav/Documents/code/python/RoboNodeJSScan/test/njsscan2.json
 
 *** Test Cases ***
 Run NodeScan against Source Code

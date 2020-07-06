@@ -2,20 +2,26 @@
 
 Robot Framework Library for the NodeJSScan SAST Tool
 
-**Supports Python 2.7.x for now**
+**Supports Python 3.x only**
+
+### Currently version 1.2
 
 ### Install Instructions
 * You need docker to run this program
-* Pull the brakeman docker image: `docker pull abhaybhargav/nodejsscan`
-* Install the RoboBrakeman Library with `pip install RoboNodeJSScan`
-* Create a `.robot` file that includes the keywords used by RoboBrakeman Library
+* Install the RoboNodeJSScan Library with `pip install RoboNodeJSScan`
+* Create a `.robot` file that includes the keywords used by RoboNodeJSScan Library
+
+#### Update
+* Includes update that works with NodeJSScan with Semgrep Support.
+* Directly leverages the `njsscan` Python API without needing additional docker containers, etc 
 
 
 ### Keywords
 
 `run nodejsscan against source`
 
-`| run nodejsscan against source  | source code path  | results path`
+`| run nodejsscan against source  | source code path  | results file | controls (optional) |`
 
 * source code path: where your ruby source code is located currently
-* results path: where your results will be stored. An `.html` file and `.json` are generated as outputs
+* results file needs to be an absolute path with the file name that you want to generate results in. It generates as a JSON file
+* controls - enables nodejsscan's `check_controls` feature that additionally operates as a passive scanner for HTTP Header security configs and so on. 
